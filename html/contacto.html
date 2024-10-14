@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/sobremi.html">Sobre mí</a></li>
+                <li><a href="../html/proyectos.html">Proyectos</a></li>
+                <li><a href="../html/habilidades.html">Habilidades</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Contáctame</h2>
+        <form action="enviar.php" method="post">
+            <!-- Campo de nombre -->
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+
+            <!-- Campo de email -->
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Escribe tu email" required><br><br>
+
+            <!-- Campo de mensaje -->
+            <label for="mensaje">Escribe un mensaje</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea><br><br>
+
+            <!-- Botón de enviar y mensaje de agradecimiento -->
+            <button type="submit">Enviar</button>
+            <span>¡Gracias por tu mensaje!</span>
+        </form>
+    </section>
+
+    <section>
+        <h2>Ubicación</h2>
+        <h3>Encuéntrame en el mapa</h3>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13618.149003015922!2d-64.1948897044715!3d-31.426873288106087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28fb8f9010b%3A0xf38e0d8c5a49ab83!2sNueva%20C%C3%B3rdoba%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1727037945066!5m2!1ses!2sar" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Agustín Martinelli. Todos los derechos reservados.</p>
+        
+        <div>
+            <a href="https://www.behance.net/agustinmartine40" target="_blank" aria-label="Behance">
+                <img src="../assets/frame1.svg" alt="Ícono de Behance" width="80">
+            </a>
+            <a href="https://www.instagram.com/martinelli_agustinn/" target="_blank" aria-label="Instagram">
+                <img src="../assets/frame2.svg" alt="Ícono de Instagram" width="80">
+            </a>
+            <a href="https://www.linkedin.com/in/agustin-martinelli-980876211/" target="_blank" aria-label="LinkedIn">
+                <img src="../assets/frame3.svg" alt="Ícono de LinkedIn" width="80">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
