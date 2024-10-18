@@ -67,6 +67,8 @@ img {
     display: block;
     margin: 20px auto;
     border-radius: 8px;
+    max-width: 100%; /* Asegurar que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
 }
 
 .projects {
@@ -106,11 +108,19 @@ img {
     .projects div {
         width: calc(50% - 10px); /* Ancho de 1/2 en pantallas más pequeñas */
     }
+
+    .projects img {
+        height: auto; /* Ajustar la altura para mantener la proporción */
+    }
 }
 
 @media (max-width: 480px) {
     .projects div {
         width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+
+    .projects img {
+        height: auto; /* Ajustar la altura para mantener la proporción */
     }
 }
 
@@ -274,14 +284,24 @@ p {
         align-items: flex-start; /* Alinear los elementos a la izquierda */
     }
 
-    .header-content p {
-        text-align: center; /* Centrar el texto en pantallas pequeñas */
-        margin-left: 0; /* Eliminar margen fijo */
+    .nombre {
+        font-size: 1.2rem; /* Reducir el tamaño del texto */
+        margin: 10px 0; /* Ajustar margen */
+    }
+
+    .cont {
+        margin-left: 0; /* Eliminar margen izquierdo */
     }
 
     .social-icons {
-        justify-content: center; /* Centrar los íconos en pantallas pequeñas */
-        margin-right: 0; /* Ajustar el margen derecho */
-        margin-top: 10px; /* Añadir margen superior para separación */
+        margin-top: 10px; /* Agregar margen superior */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* Reducir tamaño del texto del pie de página */
+    }
+
+    footer a {
+        margin: 0 5px; /* Ajustar el margen entre enlaces */
     }
 }
