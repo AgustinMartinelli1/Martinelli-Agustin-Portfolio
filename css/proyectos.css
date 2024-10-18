@@ -1,0 +1,293 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+header {
+    margin-bottom: 20px;
+    background-color: transparent; /* Fondo transparente */
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas más pequeñas */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Añadir relleno lateral */
+}
+
+.header-content p {
+    font-size: 1.8em;
+    margin: 3%;
+    flex: 1; /* Hacer que el párrafo ocupe todo el espacio disponible */
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    color: #333; /* Color negro para las palabras */
+}
+
+/* Agregar el separador '|' */
+nav ul li:not(:last-child)::after {
+    content: "|"; /* Añadir el separador después de cada ítem, excepto el último */
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #333; /* Color del separador en negro */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Color de los enlaces en negro */
+    font-size: 1.2rem; /* Tamaño de las letras */
+}
+
+/* Cambiar el color en hover */
+nav ul li a:hover {
+    color: #1abc9c; /* Color al pasar el ratón por encima */
+}
+
+p {
+    text-align: center;
+}
+
+small {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.projects {
+    display: flex; /* Usar flexbox */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+    justify-content: space-between; /* Espacio uniforme entre imágenes */
+    max-width: 1400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.projects div {
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px; /* Añadir perspectiva al contenedor */
+}
+
+.projects img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+    transform-style: preserve-3d; /* Asegura que los hijos mantengan el efecto 3D */
+}
+
+.projects div:hover img {
+    transform: scale(1.1); /* Zoom sutil al pasar el ratón */
+}
+
+.projects div:hover {
+    transform: translateY(-10px); /* Elevar el contenedor al pasar el cursor */
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+    .projects div {
+        width: calc(50% - 10px); /* Ancho de 1/2 en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects div {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+}
+
+form {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Añadir bordes redondeados */
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+form label {
+    font-weight: 600; /* Hacer etiquetas más prominentes */
+    margin-bottom: 5px; /* Espacio entre etiqueta y entrada */
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px; /* Mayor espacio entre entradas */
+    padding: 12px; /* Aumentar el relleno para un mejor toque */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #1abc9c; /* Color de borde al enfocar */
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5); /* Sombra al enfocar */
+    outline: none; /* Eliminar contorno predeterminado */
+}
+
+form button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 1.1rem; /* Aumentar tamaño de fuente */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+form button:hover {
+    background-color: #16a085;
+    transform: scale(1.05); /* Ligero zoom al pasar el ratón */
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer div {
+    margin: 20px 0;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer img {
+    width: 70px;
+    filter: brightness(0) invert(1); /* Convertir los íconos a blanco */
+}
+
+footer a:hover img {
+    transform: scale(1.1); /* Zoom sutil en hover */
+    transition: transform 0.3s ease;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex; /* Mantener los íconos en una fila */
+    gap: 10px; /* Espacio entre los íconos */
+    align-items: center; /* Alinear verticalmente los íconos */
+    margin-right: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 100px; /* Asegurarse de que todos los íconos tengan el mismo tamaño */
+    height: 100px; /* También aplicar la misma altura */
+    object-fit: contain; /* Ajustar la imagen dentro del contenedor sin distorsión */
+}
+
+/* Estilo específico para el ícono de LinkedIn */
+.frame3 {
+    width: 80px; /* Ajusta el tamaño del ícono de LinkedIn */
+    height: 80px;
+    margin-top: 38px; /* Ajusta el margen superior si está desalineado */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+.ig {
+    width: 40px;
+    height: 40px;
+    margin-top: 23px;
+    object-fit: contain;
+}
+
+/* Estilos de hover para los íconos */
+.social-icons a:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+p {
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin: 0; /* Elimina el margen si es necesario */
+}
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem; /* Tamaño más grande */
+    font-weight: 700; /* Negrita */
+    text-align: left; /* Alinear a la izquierda */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin: 20px 0; /* Margen superior e inferior */
+    max-width: 100%; /* Asegura que el ancho se ajuste al contenedor */
+    padding: 0 20px; /* Añade espacio interno */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* En pantallas pequeñas, poner los elementos en columna */
+        align-items: flex-start; /* Alinear los elementos a la izquierda */
+    }
+
+    .header-content p {
+        text-align: center; /* Centrar el texto en pantallas pequeñas */
+        margin-left: 0; /* Eliminar margen fijo */
+    }
+
+    .social-icons {
+        justify-content: center; /* Centrar los íconos en pantallas pequeñas */
+        margin-right: 0; /* Ajustar el margen derecho */
+        margin-top: 10px; /* Añadir margen superior para separación */
+    }
+
+    .projects div {
+        width: calc(50% - 10px); /* Ancho de 1/2 en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects div {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+}
