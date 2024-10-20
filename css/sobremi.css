@@ -241,3 +241,13 @@ footer a:hover img {
         text-align: center; /* Centrar texto en pantallas pequeñas */
     }
 }
+@media (max-width: 480px) {
+    .fotopersonal {
+        display: block;
+        margin: 0px; /* Centrar la imagen horizontalmente */
+        width: 150px; /* Ajusta el tamaño según lo que necesites */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+}
+
+
