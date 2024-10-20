@@ -32,13 +32,7 @@ nav ul li {
     color: #333; /* Color negro para las palabras */
 }
 
-/* Agregar el separador '|' */
-nav ul li:not(:last-child)::after {
-    content: "|"; /* Añadir el separador después de cada ítem, excepto el último */
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #333; /* Color del separador en negro */
-}
+
 
 nav ul li a {
     text-decoration: none;
@@ -309,6 +303,7 @@ p {
         justify-content: center; /* Centrar los íconos en pantallas pequeñas */
         margin-right: 0; /* Ajustar el margen derecho */
         margin-top: 10px; /* Añadir margen superior para separación */
+        margin-left: 5rem;
     }
 }
 .w-130 {

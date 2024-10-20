@@ -45,15 +45,6 @@ nav ul li {
     margin: 0 15px;
     color: #333; /* Color negro para las palabras */
 }
-
-/* Agregar el separador '|' */
-nav ul li:not(:last-child)::after {
-    content: "|"; /* Añadir el separador después de cada ítem, excepto el último */
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #333; /* Color del separador en negro */
-}
-
 nav ul li a {
     text-decoration: none;
     color: #333; /* Color de los enlaces en negro */
