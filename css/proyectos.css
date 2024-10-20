@@ -295,3 +295,9 @@ p {
     text-align: center; /* Centra el texto */
 }
 
+footer p {
+    margin: 10px 0; /* Espacio alrededor del texto */
+    text-align: center; /* Centrar el texto */
+    width: 100%; /* Asegura que el párrafo ocupe todo el ancho disponible */
+}
+

@@ -177,30 +177,42 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+    display: flex; /* Usar flexbox para alinear el contenido */
+    flex-direction: column; /* Colocar los elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+footer .footer-content {
+    display: flex; /* Usar flexbox para alinear los íconos y el texto */
+    flex-direction: column; /* Colocar en columna */
+    align-items: center; /* Centrar horizontalmente */
+    margin-bottom: 10px; /* Espacio entre el contenido y los íconos */
 }
 
 footer p {
-    margin: 10px 0;
+    margin: 10px 0; /* Espacio alrededor del texto */
 }
 
 footer div {
-    margin: 20px 0;
+    margin: 10px 0; /* Espacio alrededor de los íconos */
 }
 
 footer a {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px; /* Espacio entre íconos */
 }
 
 footer img {
-    width: 70px;
+    width: 70px; /* Tamaño de los íconos */
+    height: 70px; /* Asegura que todos los íconos tengan el mismo tamaño */
     filter: brightness(0) invert(1); /* Convertir los íconos a blanco */
 }
 
 footer a:hover img {
     transform: scale(1.1); /* Zoom sutil en hover */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
 }
+
 
 /* Header alignment */
 .header-content {
@@ -297,11 +309,4 @@ p {
         margin-top: 10px; /* Agregar margen superior */
     }
 
-    footer p {
-        font-size: 0.8rem; /* Reducir tamaño del texto del pie de página */
-    }
-
-    footer a {
-        margin: 0 5px; /* Ajustar el margen entre enlaces */
-    }
 }
