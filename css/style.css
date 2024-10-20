@@ -61,6 +61,7 @@ html, body {
 /* Navigation */
 nav {
     text-align: center;
+    margin-top: 40px;
 }
 
 nav ul {
