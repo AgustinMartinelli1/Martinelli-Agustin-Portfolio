@@ -260,7 +260,7 @@ footer p {
 }
 
 .linkedin-icon {
-    margin-top: 16.5px; /* Añadir margen superior específico para el ícono de LinkedIn */
+    padding-top: 16px; /* Añadir margen superior específico para el ícono de LinkedIn */
 }
 
 footer img {

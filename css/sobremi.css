@@ -250,3 +250,6 @@ footer {
 .footer-icons a {
     margin: 0 10px;
 }
+.linkedin-icon {
+    padding-top: 16px; /* Añadir margen superior específico para el ícono de LinkedIn */
+}
