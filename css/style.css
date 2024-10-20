@@ -303,7 +303,7 @@ p {
         justify-content: center; /* Centrar los íconos en pantallas pequeñas */
         margin-right: 0; /* Ajustar el margen derecho */
         margin-top: 10px; /* Añadir margen superior para separación */
-        margin-left: 5rem;
+        margin-left: 2rem;
     }
 }
 .w-130 {
