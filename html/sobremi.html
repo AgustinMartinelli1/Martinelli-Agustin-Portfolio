@@ -21,14 +21,19 @@
     </header>
 
     <section class="container">
-        <h1>Sobre mí</h1>
         <div class="box">
-            <img src="../assets/fotopersonal.png" alt="Foto de Agustín Martinelli" width="200">
-            <p>Soy Agustín Martinelli, tengo 23 años y estoy a punto de recibirme como diseñador industrial. Mi pasión y especialidad radican en el diseño UX, con experiencia que abarca desde la investigación de usuarios hasta la creación de flujos, wireframes y prototipos funcionales.</p>
-            <p>Manejo herramientas como Figma, Illustrator y Photoshop, lo que me permite crear experiencias de usuario coherentes, optimizadas y orientadas a las necesidades reales de las personas. Me esfuerzo por fusionar el diseño creativo con soluciones eficientes para generar productos innovadores y usables.</p>
-            <p><strong>Filosofía de trabajo:</strong> Creo firmemente que el diseño debe resolver problemas reales de manera eficiente y creativa, más allá de su estética.</p>
-            <p><a href="contacto.html">Contáctame</a> para saber más sobre cómo podemos trabajar juntos.</p>
+      
+            <div class="about-content">
+                <img src="../assets/fotopersonal.png" alt="Foto de Agustín Martinelli">
+                <div class="about-text">
+                    Soy Agustín Martinelli, tengo 23 años y estoy a punto de recibirme como diseñador industrial. Mi pasión y especialidad radican en el diseño UX, con experiencia que abarca desde la investigación de usuarios hasta la creación de flujos, wireframes y prototipos funcionales.</p>
+                    Manejo herramientas como Figma, Illustrator y Photoshop, lo que me permite crear experiencias de usuario coherentes, optimizadas y orientadas a las necesidades reales de las personas. Me esfuerzo por fusionar el diseño creativo con soluciones eficientes para generar productos innovadores y usables.</p>
+                    <strong>Filosofía de trabajo:</strong> Creo firmemente que el diseño debe resolver problemas reales de manera eficiente y creativa, más allá de su estética.</p>
+                </div>
+            </div>
         </div>
+        
+        
         <div class="box">
             <h2>Experiencia profesional</h2>
             <ul>
@@ -45,6 +50,7 @@
                 Diseño y modelado de partes para zinguería.</li>
             </ul>
         </div>
+        
         <div class="box">
             <h2>Educación</h2>
             <ul>
@@ -55,9 +61,9 @@
         </div>
     </section>
 
-    <section class="tools">
+    <section class="tools certificaciones"> <!-- Añadir la clase certificaciones aquí -->
         <h2>Certificaciones</h2>
-        <ul>
+        <ul style="text-align: center;"> <!-- Centrar la lista de certificaciones -->
             <li><strong>Diseño UX UI avanzado</strong> | Coderhouse (2024) Remoto.</li>
             <li><strong>Gestión de Proyectos y Fundamentos de metodología Agile</strong> | Santander (2024) Remoto.</li>
             <li><strong>Digital Marketing</strong> | Santander (2024) Remoto.</li>
@@ -66,18 +72,29 @@
             <li><strong>Modelado Automotriz</strong> | Facultad de Arquitectura Urbanismo y Diseño (2021) Presencial.</li>
         </ul>
     </section>
+    <p class="contact-link">
+        <a href="contacto.html">Contáctame</a> para saber más sobre cómo podemos trabajar juntos.
+    </p>
+    
+    
+    <div>
+        <p>
+            <a href="../assets/cv_agustin_martinelli.pdf" download="CV_Agustin_Martinelli.pdf" class="download-btn">Descarga mi CV</a>
+        </p>
+    </div>
 
     <footer>
         <p>© 2024 Agustín Martinelli. Todos los derechos reservados.</p>
-        <div>
+        
+        <div class="footer-icons">
             <a href="https://www.behance.net/agustinmartine40" target="_blank" aria-label="Behance">
-                <img src="../assets/frame1.svg" alt="Ícono de Behance" width="80">
+                <img src="../assets/frame1.svg" alt="Ícono de Behance">
             </a>
             <a href="https://www.instagram.com/martinelli_agustinn/" target="_blank" aria-label="Instagram">
-                <img src="../assets/frame2.svg" alt="Ícono de Instagram" width="80">
+                <img src="../assets/frame2.svg" alt="Ícono de Instagram">
             </a>
-            <a href="https://www.linkedin.com/in/agustin-martinelli-980876211/" target="_blank" aria-label="LinkedIn">
-                <img src="../assets/frame3.svg" alt="Ícono de LinkedIn" width="80">
+            <a href="https://www.linkedin.com/in/agustin-martinelli-980876211/" target="_blank" aria-label="LinkedIn" class="linkedin-icon">
+                <img src="../assets/frame3.svg" alt="Ícono de LinkedIn">
             </a>
         </div>
     </footer>

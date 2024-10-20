@@ -1,145 +1,247 @@
-/* Reset de márgenes y paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-color: #ff5733;
-    --secondary-color: #333;
-    --background-color: #f9f9f9;
-    --text-color: #333;
-    --white: #fff;
-}
-
+/* Estilo general del cuerpo */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
-
-/* Estilo para el header y navegación */
-header {
-    background-color: var(--secondary-color);
-    color: var(--white);
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
     padding: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: var(--primary-color);
-}
-
-/* Estilos principales */
-section {
-    flex: 1;
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: var(--white);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
 h1 {
     text-align: center;
-    color: var(--primary-color);
-    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 2.5rem;
 }
 
-section div {
+header {
+    margin-bottom: 20px;
+    background-color: transparent; /* Fondo transparente */
+}
+
+.header-content {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas más pequeñas */
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px; /* Añadir relleno lateral */
 }
 
-section img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-    width: 150px; /* Ajuste de tamaño de la imagen */
-    height: 150px; /* Para asegurar el aspecto circular */
-    object-fit: cover; /* Mantiene la proporción de la imagen */
+.header-content p {
+    font-size: 1.8em;
+    margin: 3%;
+    flex: 1; /* Hacer que el párrafo ocupe todo el espacio disponible */
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    color: #333; /* Color negro para las palabras */
+}
+
+/* Agregar el separador '|' */
+nav ul li:not(:last-child)::after {
+    content: "|"; /* Añadir el separador después de cada ítem, excepto el último */
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #333; /* Color del separador en negro */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Color de los enlaces en negro */
+    font-size: 1.2rem; /* Tamaño de las letras */
+}
+
+/* Cambiar el color en hover */
+nav ul li a:hover {
+    color: #1abc9c; /* Color al pasar el ratón por encima */
+}
+
+/* Estilo para los títulos */
+h1 {
+    text-align: center; /* Centrar título */
+    color: #2c3e50; /* Color del título */
+    font-size: 2.5rem; /* Tamaño del título */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para las secciones */
+.container {
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar en la página */
+    padding: 20px; /* Espacio interno */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 12px; /* Bordes redondeados más suaves */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+/* Estilo para los párrafos */
+p {
+    text-align: justify; /* Justificar texto */
+}
+
+/* Estilo para las imágenes */
+img {
+    display: block; /* Mostrar como bloque */
+    margin: 20px auto; /* Centrar imagen */
+    border-radius: 12px; /* Bordes redondeados más suaves */
+}
+
+/* Estilo para las cajas de experiencia y educación */
+.box {
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo para el contenido sobre mí */
+.about-content {
+    display: flex; /* Habilita Flexbox para alinear imagen y texto */
+    align-items: flex-start; /* Alinear verticalmente la imagen y el texto */
+}
+
+.about-content img {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+.about-text {
+    flex: 1; /* Permite que el texto ocupe el resto del espacio disponible */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* Estilo para las herramientas */
+.tools {
+    background-color: #ffffff; /* Fondo ligero */
+    padding: 20px; /* Espacio interno */
+    border-radius: 12px; /* Bordes redondeados más suaves */
+    display: flex; /* Habilita Flexbox */
+    flex-direction: column; /* Apila verticalmente */
+    align-items: center; /* Centra el contenido */
+    margin-left: 1rem;
+}
+
+/* Estilo para las certificaciones */
+.tools h2 {
+    text-align: center; /* Centra el título */
+}
+
+.tools ul {
+    display: flex; /* Habilita Flexbox */
+    flex-direction: column; /* Apila verticalmente */
+    align-items: center; /* Centra el contenido */
+    padding: 0; /* Elimina el padding */
+}
+
+/* Añadir estilos específicos para la sección de certificaciones */
+.certificaciones {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px auto; /* Margen superior e inferior */
+    max-width: 800px; /* Ancho máximo */
+}
+
+/* Estilo para los botones de descarga */
+.download-btn-container {
+    display: flex; /* Habilita Flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Margen superior del contenedor */
 }
 
 p {
-    margin-bottom: 15px;
-    text-align: center;
-    line-height: 1.8; /* Mejora la legibilidad */
+    text-align: center; /* Centra el texto dentro del párrafo */
+    color: #ffffff;
+}
+.contact-link a {
+    color: #eaff00; /* Cambia este valor al color que prefieras */
+    text-decoration: none; /* Opcional: quitar subrayado */
 }
 
-/* Estilo para el footer */
+.contact-link a:hover {
+    color: #faff92; /* Color al pasar el ratón por encima */
+}
+
+
+.download-btn {
+    display: inline-block; /* Mostrar como bloque en línea */
+    padding: 10px 20px; /* Espacio interno */
+    background-color: #007aff; /* Color de fondo en azul Apple */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: 600; /* Peso de la fuente */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+/* Agrega el hover para el botón */
+.download-btn:hover {
+    background-color: #005bb5; /* Color más oscuro en hover */
+}
+
+/* Footer */
 footer {
+    background-color: #000;
+    color: #fff;
     text-align: center;
     padding: 20px;
-    background-color: var(--secondary-color);
-    color: var(--white);
-    position: relative;
-    bottom: 0;
-    width: 100%;
+}
+
+footer p {
+    margin: px 0;
 }
 
 footer div {
-    margin-top: 10px;
+    margin: 20px 0;
 }
 
 footer a {
+    display: inline-block;
     margin: 0 10px;
-    color: var(--white);
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: var(--primary-color);
 }
 
 footer img {
-    transition: transform 0.3s;
+    width: 70px;
+    filter: brightness(0) invert(1); /* Convertir los íconos a blanco */
 }
 
-footer img:hover {
-    transform: scale(1.1);
+footer a:hover img {
+    transform: scale(1.1); /* Zoom sutil en hover */
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+}
+.about-content img {
+    width: 220px; /* Establece el ancho deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    border-radius: 12px; /* Bordes redondeados */
+    margin-top: -4px;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    section {
-        margin: 20px 10px; /* Ajuste de márgenes en pantallas pequeñas */
-        padding: 15px;
-    }
-
-    section img {
-        margin-bottom: 15px;
-        width: 120px;
-        height: 120px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../assets/fondo.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #333;
+    margin: 0;
+    padding: 20px;
 }
+footer {
+    margin-top: 40px; /* O puedes usar margin-top en el footer para separar ambas secciones */
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+

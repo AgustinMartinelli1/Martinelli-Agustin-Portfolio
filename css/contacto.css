@@ -1,13 +1,12 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.1rem; /* Aumentar el tamaño de la fuente */
 }
 
-/* Header */
 header {
     margin-bottom: 20px;
     background-color: transparent; /* Fondo transparente */
@@ -20,6 +19,7 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
+    padding-top: 16px;
 }
 
 nav ul li {
@@ -191,4 +191,57 @@ footer img {
 footer a:hover img {
     transform: scale(1.1); /* Zoom sutil en hover */
     transition: transform 0.3s ease;
+}
+/* Títulos */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif; /* Aplicar Montserrat a h2 */
+    font-weight: 600; /* Cambia el peso de la fuente a un valor más grueso */
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif; /* Aplicar Montserrat a h3 */
+    font-weight: 400; /* Cambia el peso de la fuente a un valor más grueso si deseas */
+    margin-bottom: 0.5rem; /* Margen inferior para separación */
+}
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../assets/fondo.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+.faq-section {
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar en la página */
+    padding: 20px; /* Espacio interno */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.faq {
+    margin-bottom: 20px; /* Espacio inferior entre preguntas */
+    text-align: center; /* Centrar el contenido dentro de cada faq */
+}
+
+.faq h3 {
+    margin: 0; /* Eliminar margen por defecto */
+    color: #2c3e50; /* Color del título */
+}
+
+.faq p {
+    margin: 10px 0; /* Espaciado superior e inferior para el párrafo */
+    color: #333; /* Color del texto */
+}
+.contact-info {
+    text-align: center; /* Centra el texto */
+    margin: 20px 0; /* Espaciado superior e inferior para el párrafo */
+    color: #333; /* Color del texto */
 }
