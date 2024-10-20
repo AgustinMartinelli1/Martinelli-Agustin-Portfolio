@@ -1,7 +1,10 @@
 /* Estilo general del cuerpo */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('../assets/fondo.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     color: #333;
     margin: 0;
     padding: 20px;
@@ -108,10 +111,14 @@ img {
 }
 
 .about-content img {
+    width: 220px; /* Establece el ancho deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
     margin-right: 20px; /* Espacio entre la imagen y el texto */
     border-radius: 12px; /* Bordes redondeados */
+    margin-top: -4px;
 }
 
+/* Estilo para el texto */
 .about-text {
     flex: 1; /* Permite que el texto ocupe el resto del espacio disponible */
     text-align: left; /* Alinear texto a la izquierda */
@@ -161,6 +168,7 @@ p {
     text-align: center; /* Centra el texto dentro del párrafo */
     color: #ffffff;
 }
+
 .contact-link a {
     color: #eaff00; /* Cambia este valor al color que prefieras */
     text-decoration: none; /* Opcional: quitar subrayado */
@@ -169,7 +177,6 @@ p {
 .contact-link a:hover {
     color: #faff92; /* Color al pasar el ratón por encima */
 }
-
 
 .download-btn {
     display: inline-block; /* Mostrar como bloque en línea */
@@ -217,31 +224,20 @@ footer a:hover img {
     transform: scale(1.1); /* Zoom sutil en hover */
     transition: transform 0.3s ease; /* Transición suave para el zoom */
 }
-.about-content img {
-    width: 220px; /* Establece el ancho deseado */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
-    border-radius: 12px; /* Bordes redondeados */
-    margin-top: -4px;
-}
 
-/* Estilo general del cuerpo */
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('../assets/fondo.jpg'); /* Ruta a tu imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
-    background-position: center; /* Centra la imagen en el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
-footer {
-    margin-top: 40px; /* O puedes usar margin-top en el footer para separar ambas secciones */
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-}
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Cambiar a columna para apilar la imagen y el texto */
+        align-items: center; /* Centrar el contenido */
+    }
 
+    .about-content img {
+        margin-right: 0; /* Eliminar margen derecho */
+        margin-bottom: 20px; /* Añadir espacio debajo de la imagen */
+    }
 
+    .about-text {
+        text-align: center; /* Centrar texto en pantallas pequeñas */
+    }
+}
