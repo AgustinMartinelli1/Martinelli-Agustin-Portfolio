@@ -239,3 +239,34 @@ footer a:hover img {
         height: auto; /* Mantener la proporción de la imagen */
     }
 }
+/* Estilo para el contenedor del botón de descarga */
+.download-btn-container {
+    display: flex; /* Habilitar Flexbox */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para el footer */
+.footer-content {
+    display: flex; /* Habilitar Flexbox */
+    flex-direction: column; /* Cambiar a columna */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Centrar el texto */
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-icons {
+    display: flex; /* Habilitar Flexbox para los íconos */
+    justify-content: center; /* Centrar los íconos horizontalmente */
+    margin-top: 10px; /* Margen superior para separar del texto */
+}
+
+.footer-icons a {
+    margin: 0 10px; /* Espacio entre los íconos */
+}
