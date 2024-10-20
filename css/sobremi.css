@@ -1,44 +1,40 @@
-/* Estilo general del cuerpo */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../assets/fondo.jpg'); /* Ruta a tu imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
-    background-position: center; /* Centra la imagen en el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url('../assets/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333;
     margin: 0;
     padding: 20px;
 }
 
-/* Estilos para los títulos */
 h1 {
-    text-align: center; /* Centrar título */
-    color: #2c3e50; /* Color del título */
-    font-size: 2.5rem; /* Tamaño del título */
-    margin: 20px 0; /* Espaciado superior e inferior */
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin: 20px 0;
 }
 
-/* Estilos del encabezado */
 header {
     margin-bottom: 20px;
-    background-color: transparent; /* Fondo transparente */
+    background-color: transparent;
 }
 
 .header-content {
     display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas más pequeñas */
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Añadir relleno lateral */
+    padding: 0 20px;
 }
 
 .header-content p {
     font-size: 1.8em;
     margin: 3%;
-    flex: 1; /* Hacer que el párrafo ocupe todo el espacio disponible */
+    flex: 1;
 }
 
-/* Estilos de navegación */
 nav {
     text-align: center;
 }
@@ -51,139 +47,125 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin: 0 15px;
-    color: #333; /* Color negro para las palabras */
+    color: #333;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333; /* Color de los enlaces en negro */
-    font-size: 1.2rem; /* Tamaño de las letras */
+    color: #333;
+    font-size: 1.2rem;
 }
 
-/* Cambiar el color en hover */
 nav ul li a:hover {
-    color: #1abc9c; /* Color al pasar el ratón por encima */
+    color: #1abc9c;
 }
 
-/* Estilo para las secciones */
 .container {
-    max-width: 800px; /* Ancho máximo */
-    margin: 0 auto; /* Centrar en la página */
-    padding: 20px; /* Espacio interno */
-    background-color: #fff; /* Fondo blanco */
-    border-radius: 12px; /* Bordes redondeados más suaves */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para los párrafos */
 p {
-    text-align: justify; /* Justificar texto */
+    text-align: justify;
 }
 
-/* Estilo para las imágenes */
 img {
-    display: block; /* Mostrar como bloque */
-    margin: 20px auto; /* Centrar imagen */
-    border-radius: 12px; /* Bordes redondeados más suaves */
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
 }
 
-/* Estilo para las cajas de experiencia y educación */
 .box {
-    margin-bottom: 20px; /* Espacio inferior */
+    margin-bottom: 20px;
 }
 
-/* Estilo para el contenido sobre mí */
 .about-content {
-    display: flex; /* Habilita Flexbox para alinear imagen y texto */
-    align-items: flex-start; /* Alinear verticalmente la imagen y el texto */
+    display: flex;
+    align-items: flex-start;
 }
 
 .about-content img {
-    width: 220px; /* Establece el ancho deseado */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
-    border-radius: 12px; /* Bordes redondeados */
-    margin-top: -4px; /* Ajuste de margen superior */
+    width: 220px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 12px;
+    margin-top: -4px;
 }
 
-/* Estilo para el texto sobre mí */
 .about-text {
-    flex: 1; /* Permite que el texto ocupe el resto del espacio disponible */
-    text-align: left; /* Alinear texto a la izquierda */
+    flex: 1;
+    text-align: left;
 }
 
-/* Estilo para las herramientas */
 .tools {
-    background-color: #ffffff; /* Fondo ligero */
-    padding: 20px; /* Espacio interno */
-    border-radius: 12px; /* Bordes redondeados más suaves */
-    display: flex; /* Habilita Flexbox */
-    flex-direction: column; /* Apila verticalmente */
-    align-items: center; /* Centra el contenido */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 1rem;
 }
 
-/* Estilo para las certificaciones */
 .tools h2 {
-    text-align: center; /* Centra el título */
+    text-align: center;
 }
 
 .tools ul {
-    display: flex; /* Habilita Flexbox */
-    flex-direction: column; /* Apila verticalmente */
-    align-items: center; /* Centra el contenido */
-    padding: 0; /* Elimina el padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
 }
 
-/* Estilo para la sección de certificaciones */
 .certificaciones {
-    background-color: #fff; /* Fondo blanco */
-    padding: 20px; /* Espacio interno */
-    border-radius: 12px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin: 20px auto; /* Margen superior e inferior */
-    max-width: 800px; /* Ancho máximo */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
 }
 
-/* Estilo para los botones de descarga */
 .download-btn-container {
-    display: flex; /* Habilita Flexbox */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    margin-top: 20px; /* Margen superior del contenedor */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .download-btn {
-    display: inline-block; /* Mostrar como bloque en línea */
-    padding: 10px 20px; /* Espacio interno */
-    background-color: #007aff; /* Color de fondo en azul Apple */
-    color: #fff; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 8px; /* Bordes redondeados */
-    font-weight: 600; /* Peso de la fuente */
-    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
-/* Agregar hover para el botón */
 .download-btn:hover {
-    background-color: #005bb5; /* Color más oscuro en hover */
+    background-color: #005bb5;
 }
 
-/* Estilos de contacto */
 p.contact-link {
-    text-align: center; /* Centra el texto dentro del párrafo */
+    text-align: center;
     color: #ffffff;
 }
 
 .contact-link a {
-    color: #eaff00; /* Cambia este valor al color que prefieras */
-    text-decoration: none; /* Opcional: quitar subrayado */
+    color: #eaff00;
+    text-decoration: none;
 }
 
 .contact-link a:hover {
-    color: #faff92; /* Color al pasar el ratón por encima */
+    color: #faff92;
 }
 
-/* Estilos del pie de página (footer) */
 footer {
     background-color: #000;
     color: #fff;
@@ -192,66 +174,64 @@ footer {
 }
 
 footer p {
-    margin: 0; /* Eliminar margen */
+    margin: 0;
 }
 
 footer div {
-    margin: 20px 0; /* Margen superior e inferior */
+    margin: 20px 0;
 }
 
 footer a {
     display: inline-block;
-    margin: 0 10px; /* Margen entre enlaces */
+    margin: 0 10px;
 }
 
 footer img {
     width: 70px;
-    filter: brightness(0) invert(1); /* Convertir los íconos a blanco */
+    filter: brightness(0) invert(1);
 }
 
 footer a:hover img {
-    transform: scale(1.1); /* Zoom sutil en hover */
-    transition: transform 0.3s ease; /* Transición suave para el zoom */
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .about-content {
-        flex-direction: column; /* Cambiar a columna para apilar la imagen y el texto */
-        align-items: center; /* Centrar el contenido */
+        flex-direction: column;
+        align-items: center;
     }
 
     .about-content img {
-        margin-right: 0; /* Eliminar margen derecho */
-        margin-bottom: 20px; /* Añadir espacio debajo de la imagen */
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .about-text {
-        text-align: center; /* Centrar texto en pantallas pequeñas */
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
     .fotopersonal {
         display: block;
-        margin: 0px; /* Centrar la imagen horizontalmente */
-        width: 150px; /* Ajusta el tamaño según lo que necesites */
-        height: auto; /* Mantener la proporción de la imagen */
+        margin: 0px;
+        width: 150px;
+        height: auto;
     }
 }
-/* Estilo para el contenedor del botón de descarga */
+
 .download-btn-container {
-    display: flex; /* Habilitar Flexbox */
-    justify-content: center; /* Centrar el contenido horizontalmente */
-    margin: 20px 0; /* Margen superior e inferior */
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-/* Estilo para el footer */
 .footer-content {
-    display: flex; /* Habilitar Flexbox */
-    flex-direction: column; /* Cambiar a columna */
-    align-items: center; /* Centrar horizontalmente */
-    text-align: center; /* Centrar el texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 footer {
@@ -262,11 +242,11 @@ footer {
 }
 
 .footer-icons {
-    display: flex; /* Habilitar Flexbox para los íconos */
-    justify-content: center; /* Centrar los íconos horizontalmente */
-    margin-top: 10px; /* Margen superior para separar del texto */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .footer-icons a {
-    margin: 0 10px; /* Espacio entre los íconos */
+    margin: 0 10px;
 }
