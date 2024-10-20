@@ -291,3 +291,7 @@ p {
         width: 100%; /* Ancho completo en pantallas pequeñas */
     }
 }
+.center-text {
+    text-align: center; /* Centra el texto */
+}
+
