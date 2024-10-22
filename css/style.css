@@ -8,6 +8,17 @@ html, body {
     background-color: #f4f4f4;
     color: #333;
 }
+.sobre-mi {
+    background-image: url('../assets/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Asegura que cubra toda la altura de la ventana */
+    height: auto; /* Permite que la sección crezca con el contenido */
+    padding: 20px; /* Añade un poco de espaciado */
+    color: #333; /* Asegúrate de que el texto sea legible sobre el fondo */
+}
+
 
 /* Header */
 .header-content {
@@ -327,4 +338,236 @@ footer a:hover img {
 .w-130 {
     width: 108%; /* Ancho específico */
 }
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
 
+.header-content p {
+    font-size: 1.8em;
+    margin: 3%;
+    flex: 1;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.box {
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-content img {
+    width: 220px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 12px;
+    margin-top: -4px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.tools {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.tools h2 {
+    text-align: center;
+}
+
+.tools ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.certificaciones {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.download-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #005bb5;
+}
+
+p.contact-link {
+    text-align: center;
+    color: #ffffff;
+}
+
+.contact-link a {
+    color: #eaff00;
+    text-decoration: none;
+}
+
+.contact-link a:hover {
+    color: #faff92;}
+
+    .contact-form div, .direct-contact div {
+        margin-bottom: 1rem;
+    }
+    
+    .contact-form label, .contact-form input, .contact-form textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .contact-form input, .contact-form textarea {
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .contact-form button {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .contact-form button:hover {
+        background-color: #0056b3;
+    }
+    
+    .direct-contact .contact-options {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+    
+    .contact-options a {
+        padding: 0.75rem 1.5rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+    
+    .contact-options .whatsapp {
+        background-color: #25D366;
+    }
+    
+    .contact-options .email {
+        background-color: #007bff;
+    }
+    
+    .schedule ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .schedule ul li {
+        padding: 0.5rem;
+        background-color: #f9f9f9;
+        margin-bottom: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .testimonials .testimonial {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-left: 4px solid #007bff;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+    }
+    
+    .faqs .faq {
+        margin-bottom: 1rem;
+    }
+    
+    .faqs .faq h3 {
+        margin-bottom: 0.5rem;
+    }
+    
+    .map-container iframe {
+        width: 100%;
+        height: 450px;
+        border: none;
+        margin-top: 1rem;
+    }
+    .faq-section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .faq {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .faq h3 {
+        margin: 0;
+        color: #2c3e50;
+    }
+    
+    .faq p {
+        margin: 10px 0;
+        color: #333;
+    }
+    
+    .contact-info {
+        text-align: center;
+        margin: 20px 0;
+        color: #333;
+    }
+    
+    .styled-section {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
