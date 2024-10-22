@@ -76,23 +76,23 @@
         </div>
     </div>
 
-    <section>
+    <section class="contact-section">
         <div class="container">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h2 class="wide-heading mb-4">Contáctame</h2>
-                <div class="w-130">
+                <form class="contact-form w-130">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Dirección de correo</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                        <label for="emailInput" class="form-label">Dirección de correo</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="nombre@ejemplo.com" required>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        <label for="messageTextarea" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="messageTextarea" rows="4" required></textarea>
                     </div>
                     <div class="text-center">
                         <button id="submitButton" type="submit" class="btn custom-btn">Enviar</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
