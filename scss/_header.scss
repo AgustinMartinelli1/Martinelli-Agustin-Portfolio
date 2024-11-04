@@ -1,0 +1,89 @@
+@use "variables";
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  p {
+    font-size: 1.8em;
+    margin: 3%;
+    flex: 1;
+  }
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 20px;
+
+  a {
+    display: inline-block;
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &.frame3 {
+        height: 100px;
+        width: 100px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+small {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  div {
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 200px;
+    
+    a {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.nombre {
+  font-size: 24px; // Ajusta el tamaño según tus necesidades
+  color: variables.$text-color; // Usa la variable de color del texto
+  animation: slideIn 1s ease forwards;
+
+}
+
+// Animación de deslizamiento
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

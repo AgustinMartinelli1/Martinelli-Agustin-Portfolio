@@ -1,0 +1,32 @@
+// Media Queries
+@use 'variables';
+
+@media (max-width: 768px) {
+  .projects div {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .projects div {
+    width: 100%;
+  }
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 auto; 
+}
+
+.image-container {
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+.full-width-image {
+    width: 100%;  
+    display: block; 
+}
+
+
