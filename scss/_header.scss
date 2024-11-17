@@ -1,11 +1,12 @@
 @use "variables";
 
+// Header Content
 .header-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0px;
 
   p {
     font-size: 1.8em;
@@ -14,11 +15,13 @@
   }
 }
 
+// Social Icons
 .social-icons {
   display: flex;
   gap: 10px;
   align-items: center;
   margin-right: 20px;
+  flex-wrap: wrap; // Añadido para evitar el overflow en pantallas pequeñas
 
   a {
     display: inline-block;
@@ -40,8 +43,17 @@
       }
     }
   }
+
+  // Media Query para pantallas pequeñas
+  @media (max-width: 480px) {
+    img {
+      width: 100%; // Ajuste para evitar el overflow
+      height: auto;
+    }
+  }
 }
 
+// Small Text
 small {
   display: block;
   text-align: center;
@@ -50,15 +62,18 @@ small {
   color: #666;
 }
 
+// Projects Section
 .projects {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  width: 100%; // Asegura que los proyectos no generen overflow
 
   div {
     flex: 1 1 calc(33.33% - 20px);
     min-width: 200px;
-    
+    margin-bottom: 20px;
+
     a {
       display: block;
     }
@@ -68,12 +83,27 @@ small {
       height: auto;
     }
   }
+
+  // Media Query para pantallas medianas
+  @media (max-width: 768px) {
+    div {
+      flex: 1 1 calc(50% - 20px); // Ajuste para pantallas medianas
+    }
+  }
+
+  // Media Query para pantallas pequeñas
+  @media (max-width: 480px) {
+    div {
+      flex: 1 1 100%; // Ajuste para pantallas pequeñas
+    }
+  }
 }
+
+// Nombre Animado
 .nombre {
   font-size: 24px; // Ajusta el tamaño según tus necesidades
   color: variables.$text-color; // Usa la variable de color del texto
   animation: slideIn 1s ease forwards;
-
 }
 
 // Animación de deslizamiento

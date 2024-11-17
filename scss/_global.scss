@@ -9,15 +9,44 @@ html, body {
   font-family: "Montserrat", sans-serif;
   background-color: variables.$background-color;
   color: variables.$text-color;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+
+  // Media queries para pantallas pequeñas
+  @media (max-width: 768px) {
+    padding: 15px; // Reducir el padding en pantallas medianas
+
+    h1 {
+      font-size: 2em; // Ajustar el tamaño del título en pantallas más pequeñas
+    }
+
+    p {
+      font-size: 1em; // Ajustar el tamaño del texto en pantallas más pequeñas
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px; // Reducir más el padding en pantallas muy pequeñas
+
+    h1 {
+      font-size: 1.8em; // Ajuste más pequeño del título
+    }
+
+    p {
+      font-size: 0.9em; // Ajuste más pequeño del texto
+    }
+  }
 }
 
-.sobre-mi {
-  background-image: url("../assets/fondo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  height: auto;
-  padding: 20px;
-  color: variables.$text-color;
-}
+
+
+
+

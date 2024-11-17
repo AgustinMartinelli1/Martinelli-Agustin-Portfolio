@@ -24,23 +24,5 @@ nav {
       }
     }
   }
-  .download-btn-container {
-    text-align: center; // Centrar el contenedor
-  
-    .download-btn {
-      display: inline-block; // Permitir margen y padding
-      padding: 12px 24px; // Espaciado interno
-      background-color: variables.$primary-color; // Color de fondo
-      color: #fff; // Color del texto
-      border-radius: 5px; // Bordes redondeados
-      text-decoration: none; // Quitar subrayado
-      transition: background-color 0.3s, transform 0.3s; // Transiciones suaves
-  
-      &:hover {
-        background-color: darken(variables.$primary-color, 10%); // Oscurecer el color al pasar
-        transform: translateY(-2px); // Elevar ligeramente al pasar
-      }
-    }
-  }
   
 }
